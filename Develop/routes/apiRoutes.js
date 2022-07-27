@@ -20,13 +20,10 @@ router.post("/api/notes", (req,res)=>{
         text: req.body.text
     }
     // let newNote = req.body
-    let data = fs.readFileSync("./db/db.json", "utf8")
-    let noteList = JSON.parse(data);
-    
-    noteList.push(newNote)
+    db.push(newNote);
 
-    fs.writeFileSync("./db/db.json", JSON.stringify(noteList));
-    res.json(noteList);
+    fs.writeFileSync("./db/db.json", JSON.stringify(db));
+    res.json(db);
 
     // fs.readFile("./db/db.json", (err,data) => {
     //     if (err) throw err
