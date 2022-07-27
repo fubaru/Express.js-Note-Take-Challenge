@@ -14,12 +14,12 @@ router.get("/api/notes", (req,res)=>{
 router.post("/api/notes", (req,res)=>{
     console.log(req.body)
 
-    // let newNote = {
-    //     id: uniqid(),
-    //     title: req.body.title,
-    //     text: req.body.text
-    // }
-    let newNote = req.body
+    let newNote = {
+        id: uniqid(),
+        title: req.body.title,
+        text: req.body.text
+    }
+    // let newNote = req.body
     let data = fs.readFileSync("./db/db.json", "utf8")
     let noteList = JSON.parse(data);
     
