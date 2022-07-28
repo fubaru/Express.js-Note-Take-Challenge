@@ -15,15 +15,13 @@ This project was created for users to take notes online and the saved notes data
 
 ## Installation
 
-Node, NPM, express, and VS Code
+Node, NPM, Express, Heroku, and VS Code
 
 ## Usage
 
-Please see the screenshot below to see the terminal prompts and the step by step processes. 
+Demo:
 
-Video DEMO Link: 
-
-![alt text]()
+![alt text](./Assets/Note%20Taker.gif)
 
 ## Credits
 
@@ -37,7 +35,9 @@ Instructor Phil Loy and Jide from ASKBCS team.
 
 ## Badges
 
-![badmath]()
+![badmath](https://img.shields.io/badge/JavaScript-65.7%25-yellow)
+![badmath](https://img.shields.io/badge/HTML-23.3%25-orange)
+![badmath](https://img.shields.io/badge/CSS-11%25-red)
 
 ## Features
 
